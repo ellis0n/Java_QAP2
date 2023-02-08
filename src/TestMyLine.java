@@ -15,6 +15,9 @@ public class TestMyLine {
             line1.setBegin(newBegin);
             line1.setEnd(newEnd);
             System.out.println("Line 1 after setting new begin and end: " + line1);
+            line1.setBeginX(9);
+            line1.setBeginY(10);
+
 
             // Test the getBeginX, getBeginY, getEndX, and getEndY methods
             System.out.println("Line 1 begin X: " + line1.getBeginX());
@@ -28,6 +31,13 @@ public class TestMyLine {
             System.out.println("Line 1 after setting new begin and end X and Y: " + line1);
             System.out.println("Line 1 begin X and Y: " + Arrays.toString(line1.getBeginXY()));
             System.out.println("Line 1 end X and Y: " + Arrays.toString(line1.getEndXY()));
+            int[] xy = {13, 14};
+            line1.setBeginXY(new int[] {13, 14});
+            line1.setEndXY(new int[] {15, 16});
+            System.out.println("Line 1 after setting new begin and end using arrays: " + line1);
+
+
+
 
             // Test the toString method
             System.out.println("Line 1 string representation: " + line1.toString());
@@ -36,6 +46,6 @@ public class TestMyLine {
             System.out.println("Line 1 length: " + line1.getLength());
 
             // Test the getGradient method
-            System.out.println("Line 1 gradient: " + line1.getGradient());
+            System.out.println("Line 1 gradient (radians): " + line1.getGradient());
         }
     }

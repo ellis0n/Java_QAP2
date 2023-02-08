@@ -14,7 +14,7 @@ public class MyLine {
         this.end = end;
     }
 
-    // Getters and setters for private instance variables
+    // Getters and setters
     public MyPoint getBegin() {
         return begin;
     }
@@ -26,7 +26,6 @@ public class MyLine {
     public MyPoint getEnd() {
         return end;
     }
-
 
     public void setEnd(MyPoint end) {
         this.end = end;
@@ -51,33 +50,31 @@ public class MyLine {
     public int getEndX() {
         return end.getX();
     }
+    public void setEndX(int x) {
+        end.setX(x);
+    }
 
     public int getEndY() {
         return end.getY();
-    }
-
-    public void setBeginXY(int x, int y) {
-        begin.setXY(x, y);
-    }
-
-    public void setEndX(int x) {
-        end.setX(x);
     }
 
     public void setEndY(int y) {
         end.setY(y);
     }
 
-    public void setEndXY(int x, int y) {
-        end.setXY(x, y);
-    }
-
+    // Getters and setters for begin and end points as arrays
     public int[] getBeginXY() {
         return begin.getXY();
     }
-
+    public void setBeginXY(int x, int y) {
+        begin.setXY(x, y);
+    }
     public int[] getEndXY() {
         return end.getXY();
+    }
+
+    public void setEndXY(int x, int y) {
+        end.setXY(x, y);
     }
 
     public void setBeginXY(int[] xy) {
@@ -96,9 +93,9 @@ public class MyLine {
         return begin.distance(end);
     }
 
-
-
     public double getGradient() {
-        return (end.getY() - begin.getY()) / (end.getX() - begin.getX());
+        double yDiff = end.getY() - begin.getY();
+        double xDiff = end.getX() - begin.getX();
+        return Math.atan2(yDiff, xDiff);
     }
 }
