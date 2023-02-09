@@ -36,12 +36,6 @@ public class TestMyLine {
             line1.setEndXY(new int[] {15, 16});
             System.out.println("Line 1 after setting new begin and end using arrays: " + line1);
 
-
-
-
-            // Test the toString method
-            System.out.println("Line 1 string representation: " + line1.toString());
-
             // Test the getLength method
             System.out.println("Line 1 length: " + line1.getLength());
 
