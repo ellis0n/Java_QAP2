@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5850996c-eb02-4f5f-a882-22582f739eee" name="Changes" comment="change distance to use radian formula">
-      <change afterPath="$PROJECT_DIR$/src/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CreditCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CreditCardDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Money.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MyRectangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TestMyRectangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TestMyLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestMyLine.java" afterDir="false" />
-    </list>
+    <list default="true" id="5850996c-eb02-4f5f-a882-22582f739eee" name="Changes" comment="95% done" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,12 +55,20 @@
       <option name="project" value="LOCAL" />
       <updated>1675817648584</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="95% done">
+      <created>1675953818813</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1675953818813</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
     <MESSAGE value="change distance to use radian formula" />
-    <option name="LAST_COMMIT_MESSAGE" value="change distance to use radian formula" />
+    <MESSAGE value="95% done" />
+    <option name="LAST_COMMIT_MESSAGE" value="95% done" />
   </component>
 </project>
