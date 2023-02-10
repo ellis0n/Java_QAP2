@@ -1,9 +1,11 @@
 public class Address {
+    // Instance variables
     private String street;
     private String city;
     private String state;
     private String zip;
 
+    // Constructors
     public Address() {
         street = "";
         city = "";
@@ -18,6 +20,7 @@ public class Address {
         this.zip = zip;
     }
 
+    // Getters and setters
     public String getStreet() {
         return street;
     }
@@ -50,6 +53,7 @@ public class Address {
         this.zip = zip;
     }
 
+    // toString method
     public String toString() {
         return street + " " + city + " " + state + " " + zip;
     }

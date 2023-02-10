@@ -1,16 +1,19 @@
 public class CreditCard {
-    private Person owner;
+    // Instance variables
+    private Person person;
     private Money balance;
     private Money creditLimit;
 
-    public CreditCard(Person owner, Money creditLimit) {
-        this.owner = owner;
+    // Constructor
+    public CreditCard(Person person, Money creditLimit) {
+        this.person = person;
         this.creditLimit = creditLimit;
         balance = new Money();
     }
 
+    // Getters
     public Person getPersonals() {
-        return owner;
+        return person;
     }
 
     public Money getBalance() {
@@ -21,6 +24,7 @@ public class CreditCard {
         return creditLimit;
     }
 
+    // Methods for charging and paying
     public void charge(Money amount) {
         if (balance.add(amount).compareTo(creditLimit) > 0) {
             System.out.println("Charge denied");

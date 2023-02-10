@@ -1,7 +1,9 @@
 public class Money {
+    // Instance variables
     private int dollars;
     private int cents;
 
+    // Constructors
     public Money() {
         dollars = 0;
         cents = 0;
@@ -18,15 +20,11 @@ public class Money {
     }
 
     public Money(double amount) {
-        if (amount < 0) {
-            System.out.println("Error: Negative amounts of money are not allowed.");
-            System.exit(0);
-        } else {
             dollars = (int) amount;
             cents = (int) Math.round((amount - dollars) * 100);
-        }
     }
 
+    // Getters
     public int getDollars() {
         return dollars;
     }
@@ -35,6 +33,7 @@ public class Money {
         return cents;
     }
 
+    // Methods for adding and subtracting money
     public Money add(Money otherAmount) {
         Money sum = new Money();
         sum.cents = this.cents + otherAmount.cents;
@@ -55,6 +54,7 @@ public class Money {
         return difference;
     }
 
+    // Method for comparisons (used to check credit limit)
     public int compareTo(Money otherAmount) {
         int value1 = this.dollars * 100 + this.cents;
         int value2 = otherAmount.dollars * 100 + otherAmount.cents;
@@ -67,6 +67,7 @@ public class Money {
         }
     }
 
+    // toString method
     public String toString() {
         String centsStr = String.valueOf(cents);
         if (cents < 10) {

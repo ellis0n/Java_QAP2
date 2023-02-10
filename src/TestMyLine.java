@@ -31,6 +31,8 @@ public class TestMyLine {
             System.out.println("Line 1 after setting new begin and end X and Y: " + line1);
             System.out.println("Line 1 begin X and Y: " + Arrays.toString(line1.getBeginXY()));
             System.out.println("Line 1 end X and Y: " + Arrays.toString(line1.getEndXY()));
+
+            // Test using arrays
             int[] xy = {13, 14};
             line1.setBeginXY(new int[] {13, 14});
             line1.setEndXY(new int[] {15, 16});
